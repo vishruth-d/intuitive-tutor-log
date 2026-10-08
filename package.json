@@ -1,0 +1,14 @@
+{
+  "name": "intuitive-tutor-log",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "dev": "wrangler pages dev public --port 8787",
+    "deploy": "node scripts/check-config.js && wrangler pages deploy public --project-name=intuitive-tutor-log --branch=main --commit-dirty=true",
+    "check": "node scripts/check-config.js"
+  },
+  "devDependencies": {
+    "wrangler": "^4.135.0"
+  }
+}
